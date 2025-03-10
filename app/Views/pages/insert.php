@@ -9,6 +9,22 @@
  <?= $this->section("title") ?>
  <?= $title ?>
  <?= $this->endSection("title") ?>
+ <?php
+
+
+  if (!empty($editrecord)) {
+
+    $action = base_url("update/" . $editrecord->id);
+    $editname = $editrecord->name;
+    $editmobile = $editrecord->mobile;
+    $editemail = $editrecord->email;
+  } else {
+    $action = base_url("insert/");
+    $editname = "";
+    $editmobile = "";
+    $editemail = "";
+  }
+  ?>
  <?php $validation = \Config\Services::validation();
   // print_r($validation->getError("name"));
 
@@ -30,7 +46,7 @@
          <div class="card-body">
            <div class="">
              <div class="container-fluid">
-               <form class="" action="<?= base_url("insert") ?>" method="post">
+               <form class="" action="<?= $action ?>" method="post">
                  <div class="row">
                    <div class="col-6">
                      <div class="mb-3">
@@ -45,9 +61,9 @@
                                 ?>"> -->
                        <input type="text" id="name" name="name" class="form-control
                          <?= $validation->getError("name") ? "is-invalid" : ""
-                          ?>" value="<?= set_value("name")  ?>">
+                          ?>" value="<?= set_value("name", $editname)  ?>">
                        <?php if ($validation->getError("name")) { ?>
-                       <div class="invalid-feedback"><?= $validation->getError("name") ?></div>
+                         <div class="invalid-feedback"><?= $validation->getError("name") ?></div>
                        <?php } ?>
                      </div>
                    </div>
@@ -61,9 +77,9 @@
                                 ?>"> -->
                        <input type="text" id="mobile" name="mobile" class="form-control <?= $validation->getError("mobile") ? "is-invalid" : ""
                                                                                         ?>"
-                         value="<?= set_value("mobile") ?>">
+                         value="<?= set_value("mobile", $editmobile) ?>">
                        <?php if ($validation->getError("mobile")) { ?>
-                       <div class="invalid-feedback"><?= $validation->getError("mobile") ?></div>
+                         <div class="invalid-feedback"><?= $validation->getError("mobile") ?></div>
                        <?php } ?>
                      </div>
                    </div>
@@ -77,9 +93,9 @@
                                 ?>"> -->
                        <input type="email" id="email" name="email"
                          class="form-control <?= $validation->getError("email") ? "is-invalid" : "" ?>"
-                         value="<?= set_value("email") ?>">
+                         value="<?= set_value("email", $editemail) ?>">
                        <?php if ($validation->getError("email")) { ?>
-                       <div class="invalid-feedback"><?= $validation->getError("email") ?></div>
+                         <div class="invalid-feedback"><?= $validation->getError("email") ?></div>
                        <?php } ?>
                      </div>
                    </div>

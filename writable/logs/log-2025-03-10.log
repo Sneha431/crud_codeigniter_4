@@ -1,0 +1,382 @@
+CRITICAL - 2025-03-10 02:48:32 --> TypeError: CodeIgniter\Database\BaseBuilder::setBind(): Argument #1 ($key) must be of type string, int given, called in C:\xampp\htdocs\crud_codeigniter_4\system\Database\BaseBuilder.php on line 1575
+[Method: POST, Route: insert]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3523.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1575): CodeIgniter\Database\BaseBuilder->setBind(0, '25-03-10 02:48:32', true)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2324): CodeIgniter\Database\BaseBuilder->set([...], '', true)
+ 3 APPPATH\Models\CommonModel.php(14): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\Crud.php(49): App\Models\CommonModel->insertValue('user', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:12:24 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 56.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 4 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:17:16 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 58.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 4 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:17:17 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 58.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 4 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 12:11:15 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 64.
+ 1 APPPATH\Views\pages\select.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 5 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 12:11:16 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 64.
+ 1 APPPATH\Views\pages\select.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 5 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 12:11:18 --> ErrorException: Attempt to read property "name" on array
+[Method: GET, Route: /]
+in APPPATH\Views\pages\select.php on line 64.
+ 1 APPPATH\Views\pages\select.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php', 64)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\select.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/select', [], true)
+ 5 APPPATH\Controllers\Crud.php(23): view('pages/select', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 13:06:46 --> TypeError: CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, int given, called in C:\xampp\htdocs\crud_codeigniter_4\system\Database\BaseBuilder.php on line 806
+[Method: GET, Route: delete/2]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3442.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(806): CodeIgniter\Database\BaseBuilder->hasOperator(2)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(722): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', '2', null, 'AND ', true)
+ 3 APPPATH\Models\CommonModel.php(30): CodeIgniter\Database\BaseBuilder->where('2')
+ 4 APPPATH\Controllers\Crud.php(76): App\Models\CommonModel->deleteValue('user', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->deleteUser('2')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 13:09:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: delete/2]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2819.
+ 1 APPPATH\Models\CommonModel.php(34): CodeIgniter\Database\BaseBuilder->delete()
+ 2 APPPATH\Controllers\Crud.php(77): App\Models\CommonModel->deleteValue('user', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->deleteUser('2')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:30:18 --> ErrorException: Undefined variable $name
+[Method: GET, Route: insert]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(77): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:30:19 --> ErrorException: Undefined variable $name
+[Method: GET, Route: insert]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(77): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:30:31 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(77): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:33:27 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:33:29 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:52:29 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:54:08 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:54:12 --> ErrorException: Undefined variable $name
+[Method: GET, Route: insert]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:54:49 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:58:07 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:58:08 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:58:12 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:58:17 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:58:37 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 17.
+ 1 APPPATH\Views\pages\insert.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:59:11 --> ErrorException: Undefined variable $name
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 17.
+ 1 APPPATH\Views\pages\insert.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:59:21 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 17.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 4 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 18:59:23 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: update/3]
+in APPPATH\Views\pages\insert.php on line 17.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 4 APPPATH\Controllers\Crud.php(78): view('pages/insert', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 19:36:23 --> ErrorException: Attempt to read property "name" on string
+[Method: GET, Route: insert]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(86): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 19:36:25 --> ErrorException: Attempt to read property "name" on string
+[Method: GET, Route: insert]
+in APPPATH\Views\pages\insert.php on line 14.
+ 1 APPPATH\Views\pages\insert.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on string', 'C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php', 14)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\crud_codeigniter_4\\app\\Views\\pages\\insert.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pages/insert', [], true)
+ 5 APPPATH\Controllers\Crud.php(86): view('pages/insert', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Crud->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Crud))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -6,6 +6,7 @@
  <?= $this->section("basecontent") ?>
  <!-- These define a section that will be populated by
   the content in this file, and later injected into the base layout. -->
+
  <?= $this->section("title") ?>
  <?= $title ?>
  <?= $this->endSection("title") ?>
@@ -46,17 +47,32 @@
                  </tr>
                </thead>
                <tbody>
-                 <tr>
-                   <td>1</td>
-                   <td>Vikrant Sharma</td>
-                   <td>+91 0000000000</td>
-                   <td>infocodinghax@gmail.com</td>
-                   <td class="text-center">
-                     <a href="#" class="btn btn-primary rounded mx-1">Edit</a>
-                     <a href="#" class="btn btn-danger rounded mx-1">Delete</a>
-                   </td>
-                 </tr>
+                 <?php if (!empty($result)) {
+                    $i = 1;
+                    foreach ($result as $row) {
 
+
+                  ?>
+                     <tr>
+                       <td><?= $i ?></td>
+                       <!-- <td><? //= $row->name 
+                                ?></td>
+                       <td><? //= $row->mobile 
+                            ?></td>
+                       <td><? //= $row->email 
+                            ?></td> -->
+                       <td><?= $row['name'] ?></td>
+                       <td><?= $row['mobile'] ?></td>
+                       <td><?= $row['email'] ?></td>
+                       <td class="text-center">
+                         <a href="<?= base_url("update/") . $row["id"] ?>" class="btn btn-primary rounded mx-1">Edit</a>
+                         <a href="<?= base_url("delete/") . $row["id"] ?>" class="btn btn-danger rounded mx-1">Delete</a>
+                       </td>
+                     </tr>
+                 <?php
+                      $i++;
+                    }
+                  } ?>
                </tbody>
              </table>
            </div>
